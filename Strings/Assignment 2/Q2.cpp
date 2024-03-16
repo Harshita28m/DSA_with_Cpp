@@ -3,17 +3,18 @@ using namespace std;
 
 int main() {
     string str = "2947578";
-    int maximum = 0; 
-    for (int i = 0; i < str.length(); i++) {
-        int digit = int(str[i]);
+   int maximum = 0; 
+    for (int i = 0; i < str.size(); i++) {
+        int digit = str[i] -'0';
         if (digit > maximum)
-            maximum = str[i];
+            maximum = digit;
     }
+    cout<<maximum<<endl;
     int maxi = 0;
     for (int i = 0; i < str.length(); i++) {
-        int digi=int(str[i]);
+        int digi=str[i] -'0';
         if (digi > maxi && digi != maximum)
-            maxi = str[i];
+            maxi = digi;
     }
     cout << maxi;
 
