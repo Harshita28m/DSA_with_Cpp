@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    string s="(()())(())";
+    string s="(()())(())(()(()))";
     int n = s.size();
     vector <string> v;
         int i=0;
@@ -13,7 +13,7 @@ int main() {
                v. push_back( s.substr(j-1, 2));
                 j++;
             }
-            else if(s[j]== s[j-1]) {
+            else if(s[j]!=s[i] && s[j]== s[j-1]) {
                 j+=2;
                 i=j-1;
             }
