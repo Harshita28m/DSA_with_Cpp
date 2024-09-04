@@ -4,7 +4,8 @@
         "ostream": "cpp",
         "sstream": "cpp",
         "regex": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "*.tcc": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
